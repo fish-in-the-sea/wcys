@@ -1,0 +1,37 @@
+@import "colors.css";
+
+body {
+    background-color: var(--backgroud);
+    color: var(--text);
+    text-emphasis-color: var(--highlight);
+    font-size: 22px;
+}
+
+.main-column-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.main-column {
+    width: max(40%, min(80%, 40em));
+}
+
+.header {
+    width: 100%;
+}
+
+.links {
+    width: 30%;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.title {
+    color: var(--highlight);
+
+}
