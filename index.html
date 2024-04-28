@@ -2,11 +2,11 @@
 
 <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
-    <script src="index.js"></script>
+    <script src="sketch.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body onLoad="sketches()">
     <main>
         <div class="main-column-wrapper">
             <div class="main-column">
@@ -16,21 +16,119 @@
                     </div>
                     <div class="bar">
                         <div>What Can You See</div>
-                        <div class="links bar">
+                        <!-- <div class="links bar">
                             <div>Overview</div>
                             <div>Terms</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <hr>
-                <h3 class="title">
-                    How Do We See?
-                </h3>
-                <div>
-                    There are varies 
+                <div class="section">
+                    <h3 class="title">
+                        How do You See
+                    </h3>
+                    <div class="section-body">
+                        Light bounces off of objects into your eyes. <br>
+                        The light then gets focused by your lens and gets absorbed by your rods and cones in your eyes.
+                        <br>
+                        These signals are then interperated by your brain and color is percived.
+                    </div>
+                    <div id="color" class="sketch">
+                    </div>
+                    <div class="section-body">
+                        Here is a relatively simple model of human color perception. <br>
+                        The sliders on the left choose what color is being transmitted into the eye. <br>
+                        The sliders on the right represent the amount of rods and cones of each type. <br>
+                        The color gets broken down into the activation of each then reconstructed back into a color.
+                        <br>
+                        This is not fully accurate as the combination here is linear and actual vision is not.
+
+                    </div>
+                    <div>
+                    </div>
                 </div>
+
+                <div class="section">
+                    <h3 class="title">
+                        What Cant You See
+                    </h3>
+                    <div class="section-body">
+                        Not all combinations of rods and cones creates a valid color. <br>
+                        An example of these are something called chimera colors. <br>
+                        Chimera Colors are the combination of two colors that have no additive mix. <br> <br>
+                        Below are some examples of "impossible colors". <br>
+                        To see the colors cross you eyes such that the crosses overlap and try to focus on them.
+                    </div>
+                    <div id="chimera" class="sketch">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="title">
+                        How Far do You See?
+                    </h3>
+                    <div class="section-body">
+                        Depth perceiption is your ability to see how far away an object is. <br>
+                        There are a few ways that this is achieved. <br>
+                        One method is stereoscopic vision. <br>
+                        This where mind is able to use the differences between the left and right eye <br>
+                        Below is an example of stereoscopic 3D using a stereoscopy. To see the effect cross your eyes
+                        like
+                        in the color example. <br>
+                    </div>
+
+                    <div id="stereo" class="sketch">
+                        <image src="left.png" style="padding:1em"></image>
+                        <image src="right.png" style="padding:1em"></image>
+                    </div>
+
+                    <div class="section-body">
+                        Another way you are able to sense depth is based on context. <br>
+                        We have an idea that certain obejcts are a specific size. This hints your mind with how large
+                        objects should be relative to eachother and implies a depth. <br>
+                    </div>
+
+                    <div id="context" class="sketch">
+                        <image src="cat.jpg"></image>
+                    </div>
+
+                    <div class="section-body">
+                        Here we can see that our ability to recognize the object implies something about our perception.
+                        <br>
+                        How is this possible? <br>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="title">
+                        Top Down / Bottom Up
+                    </h3>
+                    <div class="section-body">
+                        Bottom Up refers to mental processes that feed up into into higher level functions. <br>
+                        For vision that would would be visual data being processed then fed up into feature recognion
+                        then into object recognion. <br> <br>
+                    </div>
+                    <div class="section-body">
+                        Top Down are processes that start higher level and feed down into lower mental processing. <br>
+                        This would be the recognion of what the object is and feed down into sensory recognition. <br>
+                    </div>
+                    <div id="bottom" class="sketch">
+                        <image src="topbottom.png"></image>
+                    </div>
+                    <div class="section-body">
+                        Arrows to the left representing top down processing. <br>
+                        Arrows to the right representing bottom up processing. <br><br>
+
+                        As implied from context based depth perceiption, human vision works as a combination of top down
+                        and bottom up processes. <br> <br>
+
+                    </div>
+
+                </div>
+
+
+
             </div>
         </div>
-
     </main>
 </body>

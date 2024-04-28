@@ -4,7 +4,7 @@ body {
     background-color: var(--backgroud);
     color: var(--text);
     text-emphasis-color: var(--highlight);
-    font-size: 22px;
+    font-size: min(1.8em, max(2em, 22px));
 }
 
 .main-column-wrapper {
@@ -27,6 +27,18 @@ body {
 .bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+
+.section>.section-body {
+    padding-left: 1em;
+}
+
+.sketch {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
